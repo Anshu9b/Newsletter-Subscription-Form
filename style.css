@@ -1,0 +1,173 @@
+/* <section class="Spacer__Wrapper-sc-1qmp1cv-0 Stack__Wrapper-sc-11gzqgt-0 CTA__Wrapper-sc-1nuzicj-0 dnUBVk eLYIOJ dFGInG">
+<h2 class="ScreenReaderOnly__Wrapper-sc-3970so-0 gWgWEK">
+Subscribe to our newsletter</h2>
+<p class="Spacer__Wrapper-sc-1qmp1cv-0 Stack__Wrapper-sc-11gzqgt-0 CTA__TextWrapper-sc-1nuzicj-1 dnUBVk cvqVnu elAkAW">
+<span class="Text__Wrapper-sc-zbm6r7-0 Heading__Wrapper-sc-1v0dkkd-0 cCgin kIYTA">Stay up to date</span>
+<span class="Text__Wrapper-sc-zbm6r7-0 gejrXp">with new challenges, featured solutions, selected articles and our latest news</span>
+</p><form novalidate="" class="Spacer__Wrapper-sc-1qmp1cv-0 Stack__Wrapper-sc-11gzqgt-0 Form__Wrapper-sc-14p56j9-0 dnUBVk eLYIOJ eeenMc">
+<div class="Switch__Wrapper-sc-1hpaj1e-0 btsuSj">
+<div class="Spacer__Wrapper-sc-1qmp1cv-0 Stack__Wrapper-sc-11gzqgt-0 FieldWrapper__Wrapper-sc-130dzkk-0 dnUBVk lcaYXS fSnnMR">
+<div class="Spacer__Wrapper-sc-1qmp1cv-0 Stack__Wrapper-sc-11gzqgt-0 dRXKLO jAPCzM">
+<label for="NEwfZBDN" class="Text__Wrapper-sc-zbm6r7-0 Label__Wrapper-sc-43idnm-0 lckZoD lpoeZs">Email address<sup aria-hidden="true" class="Text__Wrapper-sc-zbm6r7-0 gikcEO">*</sup></label>
+</div><div class="Spacer__Wrapper-sc-1qmp1cv-0 Stack__Wrapper-sc-11gzqgt-0 dRXKLO bupBtl"><input name="email" aria-describedby="NEwfZBDN-helper" aria-required="true" data-1p-ignore="true" data-lpignore="true" id="NEwfZBDN" placeholder="email@example.com" type="email" class="Text__Wrapper-sc-zbm6r7-0 Single__Wrapper-sc-q6uvmy-0 knrnnC jtVrA-d" value=""></div></div><button class="Button__Wrapper-sc-13n29wt-0 kYMeHf">Subscribe</button></div></form></section> */
+
+
+:root{
+    --color-tomato:hsl(4, 100%, 67%);
+    --color-dark-slate-grey:hsl(234,29%, 20%);
+    --color-charcoal-grey:hsl(235,18%, 26%);
+    --color-grey:hsl(235, 18%, 26%);
+    --color-grey :hsl(231,7%,60%);
+    --color-white: hsl(0,0%,100%);
+}
+
+.attribution { 
+  font-size: 11px;
+  text-align: center;
+ }
+.attribution a { 
+color: hsl(228, 45%, 44%);
+ } 
+
+body{
+ background-color: var(--color-white);
+ color: var(--color-dark-slate-grey);
+ font-family:'Roboto', sans-serif;
+ font-weight: 400;
+}
+
+button{
+  background-color: var( --color-dark-slate-grey);
+  color:var(--color-white);
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.small-text
+{
+  color: var(--color-grey);
+}
+
+/* custom headers*/
+h1, h2,h3{
+  font-weight: 700;
+  --color-grey:hsl(235, 18%, 26%);
+  
+}
+ p,a{
+  font-weight: 400;
+  --color-grey:hsl(235, 18%, 26%);
+ }
+
+
+ .icon-text {
+  display: flex;
+  align-items: center; /* Align icon and text on the same line */
+}
+
+.icon-text svg {
+  margin-right: 10px; /* Adds space between the icon and the text */
+  width: 20px; /* Adjust icon width */
+  height: 20px; /* Adjust icon height */
+}
+
+.email{
+
+  --color-dark-slate-grey:hsl(234,29%, 20%);
+  font-size: bold;
+ 
+   
+}
+.container
+{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin: auto;
+}
+
+
+@media (max-width: 800px)
+     {
+      .container {
+        flex-direction: column; /* Stack the divs vertically on small screens */
+      }
+    }
+
+/* Styling the form field and rounding input corners */
+.form-field input {
+  border-radius: 10px; /* Makes the input corners round */
+  padding: 10px;
+  border: 2px solid #ccc; /* Default border */
+}
+
+/* Error state: Change the border to red */
+.form-field.error input {
+  border-color: red; /* Border changes to red when there is an error */
+  background-color: rgba(255, 0, 0, 0.2);
+  color: red; /* The text inside the input will turn red */
+}
+
+.form-field.success input {
+  border-color: green; /* Border changes to red when there is an error */
+  background-color: rgba(0, 255 ,0, 0.2);
+  color: green; /* The text inside the input will turn red */
+}
+
+
+/* Styling for the small error message */
+.form-field small {
+  color: red; /* Red text for the error message */
+  display: none; /* Hidden by default */
+}
+
+.form-field.error small {
+  color:red; /* Show the error message */
+}
+
+.form-field.success small {
+  color: green; /* Green text for success message */
+}
+
+
+label
+{
+font-size: 10px;
+font-weight:bold;
+--color-charcoal-grey:hsl(235,18%, 26%);
+display:block;
+
+
+}
+
+
+input[type="text"] {
+  width: 80%; /* Makes the input take full width of the container */
+  padding: 10px; /* Adds padding for better spacing inside the input */
+  margin-left:10px;
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid hsl(231, 7%, 60%); /* Gray border */
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+
+.container2{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  margin-top:200px;
+  
+}
+ .icon-text2{
+
+  margin-left: 100px;
+  /* used to make 2 times bigger the given size of image*/
+  transform: scale(2);
+ 
+}
